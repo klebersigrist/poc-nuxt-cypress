@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "types": ["cypress", "node", "@mocks-server/cypress-commands"],
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/fixtures/*": ["fixtures/*"],
+      "@/pageObjects/*": ["pageObjects/*"]
+    }
+  },
+  "include": ["**/*.ts"]
+}
