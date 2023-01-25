@@ -18,6 +18,7 @@ describe('Home', () => {
                 homePage.goToHomepage();
                 // then
                 homePage.boxCatFacts().should('be.visible');
+                homePage.alertCatFactsError().should('not.exist');
             });
         });
 
@@ -30,6 +31,7 @@ describe('Home', () => {
                 // when
                 homePage.goToHomepage();
                 // then
+                homePage.alertCatFactsError().should('be.visible');
                 homePage.boxCatFacts().should('not.exist');
             });
         });

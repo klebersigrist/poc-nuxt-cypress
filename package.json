@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=tests nuxt",
+    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "NODE_ENV=development nuxt start",
+    "start": "nuxt start",
     "generate": "NODE_ENV=production nuxt generate",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
@@ -16,7 +16,7 @@
     "cypress:headless": "cypress run --browser chrome",
     "mocks": "mocks-server",
     "mocks:ci": "mocks-server --no-plugins.inquirerCli.enabled",
-    "mocks:ci-and-start": "NODE_ENV=test start-server-and-test mocks:ci tcp:3100 dev",
+    "mocks:ci-and-start": "NODE_ENV=tests start-server-and-test mocks:ci tcp:3100 nuxt",
     "e2e": "start-server-and-test mocks:ci-and-start http://localhost:3000 cypress",
     "e2e:headless": "start-server-and-test mocks:ci-and-start http://localhost:3000 cypress:headless"
   },

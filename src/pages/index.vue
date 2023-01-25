@@ -2,21 +2,28 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
+        <h1 class="mt-5">
+          Cat Facts:
+        </h1>
         <div
           v-if="catfacts.fact"
-          data-test-id="box-cat-facts"
         >
-          <h1 class="mt-5">
-            Cat Facts:
-          </h1>
-          <div class="alert alert-primary mt-5" role="alert">
+          <div
+            class="alert alert-primary mt-5"
+            role="alert"
+            data-test-id="box-cat-facts"
+          >
             {{ catfacts.fact }}
           </div>
         </div>
         <div v-else>
-          <h1 class="mt-5">
+          <div
+            class="alert alert-danger mt-5"
+            role="alert"
+            data-test-id="alert-cat-facts-error"
+          >
             Ops... Error getting cat facts!
-          </h1>
+          </div>
         </div>
       </div>
     </div>

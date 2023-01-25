@@ -53,7 +53,7 @@ export default {
 
   dotenv: {
     path: 'env',
-    filename: `.env.${process.env.NODE_ENV}`,
+    filename: `.env.${process.env.NODE_ENV || 'development'}`,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
