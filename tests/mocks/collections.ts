@@ -1,8 +1,8 @@
 const collections = [
-    {
-        id: 'catfacts',
-        routes: ['get-catfacts:success'],
-    }
+  {
+    id: 'catfacts',
+    routes: ['get-catfacts:success'],
+  }
 ];
 
 export default collections;

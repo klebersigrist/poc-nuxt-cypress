@@ -33,7 +33,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
+    '@nuxtjs/stylelint-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -42,7 +42,7 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/dotenv',
+    '@nuxtjs/dotenv'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -53,10 +53,10 @@ export default {
 
   dotenv: {
     path: 'env',
-    filename: `.env.${process.env.NODE_ENV || 'development'}`,
+    filename: `.env.${process.env.NODE_ENV || 'development'}`
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
-}
+  },
+};

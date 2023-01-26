@@ -1,13 +1,16 @@
+import Chainable = Cypress.Chainable;
+import AUTWindow = Cypress.AUTWindow;
+
 class HomePage {
-    goToHomepage() {
-        return cy.visit('http://localhost:3000/');
-    }
+  goToHomepage(): Chainable<AUTWindow> {
+    return cy.visit('http://localhost:3000/');
+  }
 
-    boxCatFacts() {
-        return cy.get('[data-test-id="box-cat-facts"]');
-    }
+  boxCatFacts(): Cypress.Chainable<JQuery<HTMLElement>> {
+    return cy.get('[data-test-id="box-cat-facts"]');
+  }
 
-    alertCatFactsError() {
+  alertCatFactsError(): Cypress.Chainable<JQuery<HTMLElement>> {
     return cy.get('[data-test-id="alert-cat-facts-error"]');
   }
 }

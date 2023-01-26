@@ -49,5 +49,5 @@ export default Vue.extend({
   },
 
   fetchOnServer: true,
-})
+});
 </script>

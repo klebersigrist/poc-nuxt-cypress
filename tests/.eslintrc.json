@@ -6,7 +6,6 @@
   ],
   "rules": {
     "@typescript-eslint/no-namespace": "off",
-    "indent": "error",
     "object-curly-spacing": ["error", "always"],
     "padded-blocks": ["error", "never"],
     "quotes": ["error", "single", "avoid-escape"],

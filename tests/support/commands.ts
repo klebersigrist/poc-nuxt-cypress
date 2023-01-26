@@ -37,11 +37,11 @@
 // }
 
 Cypress.Commands.add('setMobileViewport', () => {
-    cy.viewport(375, 800);
+  cy.viewport(375, 800);
 });
 
 Cypress.Commands.add('setDesktopViewport', () => {
-    cy.viewport(1366, 768);
+  cy.viewport(1366, 768);
 });
 
 // Prevent TypeScript from reading file as legacy script
